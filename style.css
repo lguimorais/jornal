@@ -1,171 +1,171 @@
-/* Reset básico */
+/* Reset básico - Remove margens e preenchimentos padrão dos elementos e define o box-sizing para border-box, garantindo que a largura e altura incluam preenchimento e borda */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão para todo o documento */
 }
 
-/* Estilização geral */
+/* Estilização geral do corpo da página */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
+    background-color: #121212; /* Define um fundo escuro */
+    color: #ffffff; /* Define a cor do texto como branco */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    font-size: 16px; /* Define o tamanho da fonte padrão */
 }
 
-/* Cabeçalho */
+/* Estilização do cabeçalho */
 header.topicos {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #8B0000; /* Vermelho escuro */
-    padding: 15px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
+    width: 100%; /* Ocupa toda a largura da tela */
+    display: flex; /* Usa flexbox para organizar os itens */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    justify-content: space-between; /* Distribui os elementos igualmente no espaço disponível */
+    background-color: #8B0000; /* Cor de fundo vermelho escuro */
+    padding: 15px 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para efeito de elevação */
 }
 
-/* Logo */
+/* Logo dentro do cabeçalho */
 #logo img {
-    height: 80px;
-    width: auto;
+    height: 80px; /* Define altura da imagem do logo */
+    width: auto; /* Mantém a proporção da imagem */
 }
 
-/* Centraliza o título */
+/* Centraliza o título do cabeçalho */
 header h1 {
-    flex: 1;
-    text-align: center;
-    font-size: 24px;
-    color: #ffffff;
+    flex: 1; /* Ocupa o máximo de espaço disponível */
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Define o tamanho da fonte */
+    color: #ffffff; /* Define a cor do texto */
 }
 
-/* Navegação */
+/* Estilização da navegação */
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
+/* Links do menu */
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    color: #ffffff; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease-in-out; /* Efeito de transição de cor ao passar o mouse */
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Muda a cor do link ao passar o mouse */
 }
 
-/* Container principal */
+/* Layout principal */
 .container {
-    display: grid;
-    grid-template-columns: 250px 1fr 250px;
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
-    margin-top: 20px;
+    display: grid; /* Usa grid para organizar os elementos */
+    grid-template-columns: 250px 1fr 250px; /* Define três colunas: lateral, conteúdo principal e lateral */
+    gap: 20px; /* Espaçamento entre colunas */
+    width: 90%; /* Define a largura total */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin-top: 20px; /* Adiciona margem no topo */
 }
 
 /* Menu lateral */
 #menu-lateral {
-    background-color: #222;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.3);
+    background-color: #222; /* Fundo escuro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.3); /* Sombra vermelha */
 }
 
 #menu-lateral ul {
-    list-style: none;
+    list-style: none; /* Remove os marcadores da lista */
 }
 
 #menu-lateral ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
 }
 
 #menu-lateral ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: transform 0.3s ease-in-out;
+    color: #ffffff; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Define o tamanho da fonte */
+    transition: transform 0.3s ease-in-out; /* Animação ao passar o mouse */
 }
 
 #menu-lateral ul li a:hover {
-    transform: translateX(5px);
-    color: #ffcc00;
+    transform: translateX(5px); /* Move ligeiramente o item ao passar o mouse */
+    color: #ffcc00; /* Muda a cor do texto */
 }
 
-/* Seção de notícias */
+/* Estilização da seção de notícias */
 .conteudo {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.3);
+    background-color: #1a1a1a; /* Fundo escuro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.3); /* Sombra vermelha */
 }
 
 .noticia {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #333;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Espaçamento entre as notícias */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #333; /* Fundo cinza escuro */
+    transition: transform 0.3s ease-in-out; /* Efeito ao passar o mouse */
 }
 
 .noticia:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.5);
+    transform: scale(1.03); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.5); /* Sombra vermelha mais intensa */
 }
 
 .noticia h2 a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* Define a cor do título */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
 .noticia h2 a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Muda a cor do título ao passar o mouse */
 }
 
-/* Seção de propagandas */
+/* Estilização da seção de propagandas */
 .propaganda {
-    background-color: #8B0000; /* Vermelho escuro */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.4);
+    background-color: #8B0000; /* Fundo vermelho escuro */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 18px; /* Define o tamanho da fonte */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.4); /* Sombra vermelha */
 }
 
 .propaganda img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
-/* Responsividade */
+/* Responsividade para telas menores */
 @media (max-width: 900px) {
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Exibe apenas uma coluna */
     }
 
     #menu-lateral, .propaganda {
-        display: none;
+        display: none; /* Esconde o menu lateral e propagandas em telas menores */
     }
 
     header.topicos {
-        flex-direction: column;
+        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
         text-align: center;
     }
 
     #logo {
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Adiciona margem abaixo do logo */
     }
 
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Permite que os itens quebrem linha */
+        justify-content: center; /* Centraliza os links */
     }
 }

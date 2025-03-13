@@ -1,153 +1,157 @@
 /* Importando fonte moderna do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+/* Importa a fonte 'Montserrat' com pesos 300, 400 e 600 do Google Fonts para uso no site. */
 
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que largura e altura incluam padding e borda */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte padrão como Montserrat */
+    scroll-behavior: smooth; /* Suaviza a rolagem da página */
 }
 
-/* Cores principais */
+/* Definição de variáveis de cores principais */
 :root {
-    --background: #121212;
-    --primary: #8B0000;
-    --text-light: #f5f5f5;
-    --text-dark: #ccc;
-    --shadow: rgba(0, 0, 0, 0.5);
+    --background: #121212; /* Cor de fundo principal */
+    --primary: #8B0000; /* Cor primária (vermelho escuro) */
+    --text-light: #f5f5f5; /* Cor do texto claro */
+    --text-dark: #ccc; /* Cor do texto escuro */
+    --shadow: rgba(0, 0, 0, 0.5); /* Cor da sombra */
 }
 
-/* Estilo do corpo */
+/* Estilização do corpo da página */
 body {
-    background-color: var(--background);
-    color: var(--text-light);
-    font-size: 16px;
-    line-height: 1.6;
+    background-color: var(--background); /* Define a cor de fundo */
+    color: var(--text-light); /* Define a cor padrão do texto */
+    font-size: 16px; /* Define o tamanho da fonte padrão */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    padding-top:100px;
+    flex-direction: column; /* Organiza o layout em coluna */
+    align-items: center; /* Centraliza os itens */
+    padding: 20px; /* Adiciona um espaço interno ao corpo */
+    padding-top: 100px; /* Adiciona espaço superior para compensar o cabeçalho fixo */
 }
 
-/* Ajuste no cabeçalho */
+/* Estilização do cabeçalho */
 .header-container {
-    width: 100vw; /* Garante que ocupe toda a largura da tela */
-    background-color: var(--primary);
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px var(--shadow);
-    position: fixed; /* Fixa no topo da tela */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    background-color: var(--primary); /* Usa a cor primária */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px var(--shadow); /* Adiciona uma sombra */
+    position: fixed; /* Mantém o cabeçalho fixo no topo */
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 100; /* Garante que fique acima de outros elementos */
 }
 
-
-
-
+/* Mudança de cor ao passar o mouse no cabeçalho */
 .header-container:hover {
-    background-color: #a00000;
+    background-color: #a00000; /* Altera a cor do fundo ao passar o mouse */
 }
 
+/* Estilização do título do cabeçalho */
 header h1 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 28px; /* Define o tamanho do título */
+    font-weight: 600; /* Define o peso da fonte como semi-negrito */
 }
 
-/* ====== Botão Voltar ====== */
+/* Estilização do botão voltar */
 .voltar {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 18px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    color: var(--text-light); /* Define a cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Define o tamanho da fonte */
+    padding: 10px 18px; /* Adiciona espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 5px; /* Borda arredondada */
+    transition: all 0.3s ease; /* Suaviza a transição ao passar o mouse */
 }
 
+/* Mudança de estilo ao passar o mouse no botão voltar */
 .voltar:hover {
-    background-color: var(--text-light);
-    color: var(--primary);
+    background-color: var(--text-light); /* Muda a cor de fundo */
+    color: var(--primary); /* Muda a cor do texto */
 }
 
-/* ====== Layout Principal ====== */
+/* Layout principal */
 .main-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1000px; /* Define um limite máximo de largura */
+    margin: 20px auto; /* Centraliza horizontalmente */
     display: flex;
-    justify-content: center;
-    padding: 0 20px;
+    justify-content: center; /* Centraliza os conteúdos */
+    padding: 0 20px; /* Adiciona espaçamento interno nas laterais */
 }
 
-/* ====== Artigo ====== */
+/* Estilização do artigo */
 .noticia-detalhada {
-    background-color: #1a1a1a;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0px 6px 12px var(--shadow);
-    transition: transform 0.3s ease;
+    background-color: #1a1a1a; /* Define um fundo escuro */
+    padding: 25px; /* Adiciona espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 6px 12px var(--shadow); /* Adiciona sombra */
+    transition: transform 0.3s ease; /* Suaviza a animação */
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Define uma única coluna */
+    gap: 20px; /* Espaçamento entre elementos */
 }
 
+/* Efeito ao passar o mouse no artigo */
 .noticia-detalhada:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Eleva ligeiramente o bloco */
 }
 
-/* ====== Imagem ====== */
+/* Estilização da imagem */
 .imagem-container {
-    text-align: center;
+    text-align: center; /* Centraliza a imagem */
 }
 
 .imagem-container img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.4s ease-in-out;
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    max-width: 800px; /* Define um limite máximo de largura */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.4s ease-in-out; /* Suaviza o efeito de escala */
 }
 
+/* Efeito ao passar o mouse na imagem */
 .imagem-container img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem */
 }
 
-/* ====== Texto ====== */
+/* Estilização do texto */
 .conteudo-texto p {
-    font-size: 18px;
-    color: var(--text-dark);
-    text-align: justify;
-    margin-bottom: 15px;
-    transition: color 0.3s ease;
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: var(--text-dark); /* Define a cor inicial do texto */
+    text-align: justify; /* Justifica o texto */
+    margin-bottom: 15px; /* Adiciona espaçamento entre parágrafos */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
 }
 
+/* Efeito ao passar o mouse no texto */
 .conteudo-texto p:hover {
-    color: var(--text-light);
+    color: var(--text-light); /* Muda a cor do texto ao passar o mouse */
 }
 
-/* ====== Responsividade ====== */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .header-container {
-        padding: 15px;
+        padding: 15px; /* Ajusta o espaçamento no cabeçalho */
     }
 
     header h1 {
-        font-size: 22px;
+        font-size: 22px; /* Reduz o tamanho do título no cabeçalho */
     }
 
     .voltar {
-        font-size: 16px;
+        font-size: 16px; /* Reduz o tamanho do botão voltar */
     }
 
     .imagem-container img {
-        max-width: 100%;
+        max-width: 100%; /* Ajusta a largura da imagem para telas menores */
     }
 
     .conteudo-texto p {
-        font-size: 16px;
+        font-size: 16px; /* Reduz o tamanho da fonte do texto */
     }
 }
