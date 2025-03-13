@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
+<body>
     <header class="topicos">
-      <h1>Últimas Notícias</h1>
-      <ul>
-        <li><a href="tecnologia.html">Tecnologia</a></li>
-        <li><a href="ambiente.html">Meio Ambiente</a></li>
-        <li><a href="entretenimento.html">Entretenimento</a></li>
-      </ul>
+        <div id="logo">
+            <img src="logo.png" alt="Logo do site">
+        </div>
+        <h1>Treta News</h1>
+        <nav>
+            <ul>
+                <li><a href="tecnologia.html">Tecnologia</a></li>
+                <li><a href="ambiente.html">Meio Ambiente</a></li>
+                <li><a href="entretenimento.html">Entretenimento</a></li>
+            </ul>
+        </nav>
     </header>
+
     <div class="container">
-      <aside class="propaganda">Propaganda 1</aside>
-      <main class="conteudo">
-        <section class="noticias">
-          <div class="topicosNot">
-            <article class="noticia">
-              <h2>
-                <a href="tecnologia.html"
-                  >Nova Inteligência Artificial promete revolucionar a
-                  medicina</a
-                >
-              </h2>
-              <p>
-                Uma nova IA desenvolvida por pesquisadores promete diagnosticar
-                doenças com 98% de precisão, reduzindo tempo de espera para
-                exames e consultas médicas.
-              </p>
-            </article>
+        <!-- Menu lateral com temas -->
+        <aside id="menu-lateral">
+            <h2>Temas</h2>
+            <ul>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Ciência</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Saúde</a></li>
+                <li><a href="#">Cultura</a></li>
+            </ul>
+        </aside>
 
-            <article class="noticia">
-              <h2>
-                <a href="ambiente.html"
-                  >Tempestade solar pode causar apagão global, alertam
-                  cientistas</a
-                >
-              </h2>
-              <p>
-                Pesquisadores da NASA detectaram uma forte atividade solar que
-                pode interferir em redes elétricas e satélites.
-              </p>
-            </article>
+        <main class="conteudo">
+            <section class="noticias">
+                <div class="topicosNot">
+                    <article class="noticia">
+                        <h2>
+                            <a href="tecnologia.html">Nova Inteligência Artificial promete revolucionar a medicina</a>
+                        </h2>
+                        <p>
+                            Uma nova IA desenvolvida por pesquisadores promete diagnosticar doenças com 98% de precisão,
+                            reduzindo tempo de espera para exames e consultas médicas.
+                        </p>
+                    </article>
+                    <article class="noticia">
+                        <h2>
+                            <a href="ambiente.html">Tempestade solar pode causar apagão global, alertam cientistas</a>
+                        </h2>
+                        <p>
+                            Pesquisadores da NASA detectaram uma forte atividade solar que pode interferir em redes
+                            elétricas e satélites.
+                        </p>
+                    </article>
+                    <article class="noticia">
+                        <h2>
+                            <a href="entretenimento.html">Novo filme de ficção científica bate recorde de bilheteria</a>
+                        </h2>
+                        <p>
+                            O mais recente lançamento de Hollywood arrecadou mais de 500 milhões de dólares no primeiro
+                            fim de semana.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
 
-            <article class="noticia">
-              <h2>
-                <a href="entretenimento.html"
-                  >Novo filme de ficção científica bate recorde de bilheteria</a
-                >
-              </h2>
-              <p>
-                O mais recente lançamento de Hollywood arrecadou mais de 500
-                milhões de dólares no primeiro fim de semana.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
-      <aside class="propaganda">Propaganda 2</aside>
+        <!-- Espaço para propagandas com imagens -->
+        <aside class="propaganda">
+            <img src="image-tigre.png" alt="Imagem da propaganda 1">
+            <p>Tigrinho é legalizado no Brasil!</p>
+        </aside>
+
+        <aside class="propaganda">
+            <img src="image-car.png" alt="Imagem da propaganda 2">
+            <p>Carros de leilao pela metade do preço!!</p>
+        </aside>
     </div>
-  </body>
+</body>
+
 </html>

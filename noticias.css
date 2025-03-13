@@ -1,0 +1,153 @@
+/* Importando fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Cores principais */
+:root {
+    --background: #121212;
+    --primary: #8B0000;
+    --text-light: #f5f5f5;
+    --text-dark: #ccc;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do corpo */
+body {
+    background-color: var(--background);
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top:100px;
+}
+
+/* Ajuste no cabeçalho */
+.header-container {
+    width: 100vw; /* Garante que ocupe toda a largura da tela */
+    background-color: var(--primary);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow);
+    position: fixed; /* Fixa no topo da tela */
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+
+.header-container:hover {
+    background-color: #a00000;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ====== Botão Voltar ====== */
+.voltar {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: var(--text-light);
+    color: var(--primary);
+}
+
+/* ====== Layout Principal ====== */
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* ====== Artigo ====== */
+.noticia-detalhada {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px var(--shadow);
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.noticia-detalhada:hover {
+    transform: translateY(-5px);
+}
+
+/* ====== Imagem ====== */
+.imagem-container {
+    text-align: center;
+}
+
+.imagem-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.imagem-container img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== Texto ====== */
+.conteudo-texto p {
+    font-size: 18px;
+    color: var(--text-dark);
+    text-align: justify;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.conteudo-texto p:hover {
+    color: var(--text-light);
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .voltar {
+        font-size: 16px;
+    }
+
+    .imagem-container img {
+        max-width: 100%;
+    }
+
+    .conteudo-texto p {
+        font-size: 16px;
+    }
+}
